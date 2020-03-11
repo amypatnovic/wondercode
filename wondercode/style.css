@@ -237,7 +237,7 @@ div[id*="section"] h2 {
     }
 
     #section-3 blockquote {
-        width: 100%;
+        width: auto;
         padding: 50px;
     }
 

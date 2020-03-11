@@ -203,6 +203,7 @@ div[id*="section"] h2 {
     padding: 50px;
     transform: scale(0);
     transition: 0.2s ease-in-out all;
+    display: none;
 }
 
 .modal-content code {
@@ -224,6 +225,7 @@ div[id*="section"] h2 {
 
 .modal-visible .modal-content {
     transform: scale(1);
+    display: block;
 }
 
 

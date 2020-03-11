@@ -1,0 +1,226 @@
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+html, body {width: 100%;height: 100%;}
+html , body , h1 , h2 , h3 , h4 , h5 , p , header, nav, article, section, aside, figure, figcaption, footer {margin:0px;padding:0px;}
+header, article, section, aside, figure, figcaption, footer {
+    display:block;
+    font-family: 'Raleway', sans-serif; } 
+
+
+body {
+    background: #ea4034 url(https://user-images.githubusercontent.com/13753136/76371754-37456c80-6333-11ea-853f-69dc81bd4eec.png);
+    background-size: 200px;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6, p, a {
+    font-family: 'Raleway', sans-serif;
+}
+
+p {
+    font-size: 18px;
+}
+
+div[id*="section"] {
+    display: table;
+    text-align: center;
+    width: 800px;
+    margin: 0 auto;
+}
+
+div[id*="section"] .inner-wrapper {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+}
+
+div[id*="section"] h2 {
+    margin-bottom: 50px;
+}
+
+#section-1 {
+    background: url(https://user-images.githubusercontent.com/13753136/76371949-db2f1800-6333-11ea-9794-f79843cbce6e.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 740px;
+}
+
+#section-1 img {
+    width: 550px;
+    text-align: center;
+}
+
+#section-1 a {
+    font-family: 'Raleway', sans-serif;
+    border: 4px solid #ea3e34;
+    border-radius: 1000px;
+    width: 60px !important;
+    height: 60px !important;
+    display: block;
+    margin: 0 auto;
+}
+
+#section-1 a:hover {
+    background-color: #fff100;
+}
+
+#section-1 a img {
+    width: 50px;
+    margin-top: 6px;
+}
+
+#section-2 {
+ padding: 100px 0 100px 0;
+}
+
+#section-2 .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  #section-2 .col {
+    flex: 1 0 18%; /* The important bit. This percentage decides your columns. 
+   The percent can be px. It just represents your minimum starting width.
+    */
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #section-2 a {
+      background-color: #fff100;
+      border-radius: 1000px;
+      width: 100px;
+      height: 100px;
+      display: block;
+      position: relative;
+    }
+
+  #section-2 a span {
+    width: 100px;
+    height: 100px;
+    left: 0;
+    position: absolute;
+    z-index: 100;
+    }
+
+  #section-2 a:hover {
+    background-color: #232069;
+    }
+
+  #section-2 a img {
+    width: 80%;
+    margin-top: 10px;
+    }
+
+#section-2 p {
+    display: block;
+    }   
+
+#section-3 {
+    width: 100% !important;
+    height: 400px;
+    background-image: url(https://user-images.githubusercontent.com/13753136/76377047-c3f72700-6341-11ea-96bd-988e50b34959.jpg);
+    background-size: cover;
+}
+
+#section-3 blockquote {
+    color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+    text-align: left;
+    font-size: 20px;
+}
+
+#section-3 blockquote strong {
+    color: #fff100;
+}
+
+
+.modal-trigger, a {
+    color: rgb(10, 47, 255);
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.modal {
+    align-items: center;
+    background-color: rgba(31, 31, 31, 0.75);
+    bottom: 0;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    left: 0;
+    opacity: 0;
+    position: fixed;
+    right: 0;
+    transition: 0.2s ease-in-out opacity;
+    visibility: hidden;
+    width: 100%;
+    z-index: 1000;
+}
+
+.modal.modal-visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-header {
+    align-items: center;
+    border-bottom: 2px solid #cccccc;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.modal-close {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    height: 30px;
+    justify-content: center;
+    width: 30px;
+}
+
+.modal-close::before {
+    content: "X";
+    color: rgb(112, 112, 112);
+}
+
+.modal-close:hover::before {
+    color: black;
+}
+
+.modal-content {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+    padding: 50px;
+    transform: scale(0);
+    transition: 0.2s ease-in-out all;
+}
+
+.modal-content code {
+    width: 450px;
+    background: #efefef;
+    border: solid 1px #4d4d4d;
+    font-size: 16px;
+    padding: 10px;
+    margin: 20px 0 20px 0;
+    line-height: 2;
+    display: block;
+}
+
+.modal-content img {
+    border: 10px solid #ffffff;
+    outline: 1px solid #4d4d4d;
+    margin-bottom: 20px;
+}
+
+.modal-visible .modal-content {
+    transform: scale(1);
+}
